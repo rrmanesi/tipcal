@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="assets/stylesheets/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <h3 style="text-align:center; font-weight:bold;">Tip Calculator</h3>
+    <div class="container">
+        <div class="box1">
+            <div class="calculator">
+                
+               
+                <br>
+                <label for="price">Price of Meal:</label><br>
+                <button><i class="fas fa-dollar-sign"></i></button>
+                <input type="number" id="price" name="price"><br><br>
+                <label for="numberOfPeople">Number of People:</label><br>
+                <button><i class="fas fa-male"></i></button><input type="number" id="numberOfPeople"
+                    name="numberOfPeople"><br><br>
+                <label for="Quality">Quality of Service:</label><br>
+                <select id="quality">
+                    <option disabled selected value='0'>Choose...</option>
+                    <option value='0.25'>25% - Outstanding</option>
+                    <option value='0.20'>20% - Excellent</option>
+                    <option value='0.18'>18% - Good</option>
+                    <option value='0.15'>15% - Ok</option>
+                    <option value='0.10'>10% - Needs Improvement</option>
+                </select>
+                <div style="text-align: center;">
+                    <br>
+                    <input id="submit" style="border-radius: 5px; width:fit-content;" type="submit" value="Submit">
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="box2">
+            <div  id = "display">
+        
+                <label id = "Tip">Tip:</label>
+                 <br><br>
+                <label id = "TotalBill">TotalBill:</label><br><br>
+                <label id = "split">Split:</label>
+                
+            </div>
+            
+           
+            
+
+        </div>
+    </div>
+    <script src="assets/scripts/tipcalculator.js"></script>
+</body>
+
+</html>
